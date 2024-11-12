@@ -1,8 +1,13 @@
-name: "my-website"
+name: "Curso Ecología del Paisaje y Ecoacústica"
 navbar:
-  title: "My Website"
+  title: "Curso Ecología del paisaje y ecoacústica"
   left:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+
+
+git remote add origin https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica.git
+git branch -M main
+git push -u origin main
