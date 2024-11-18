@@ -6,10 +6,18 @@ output: html_document
 # Bienvenidos al Curso de Ecología del paisaje con énfasis en Ecoacústica
 
 Este curso está diseñado para enseñar conceptos clave de la ecología del paisaje y la ecoacústica, utilizando herramientas computacionales modernas como **Google Colab**.
+
 Los audios pueden ser descargados de: https://drive.google.com/drive/folders/1UJoo2CyV6Ha9UKdP4g4Ei1PjDRyjizgR?usp=sharing
+
 Introducción a Google COLAB: https://www.youtube.com/watch?v=8VFYs3Ot_aA
 
 
+# INSTRUCTORES
+## Víctor M. Martínez-Arias
+Biólogo, MSc. y candidato a Doctor en Bioología con conocimiento y experiencia en ecología espacial y del paisaje, ecoacústica, sistemática de mamíferos, biología de la conservación, ecología animal, colecta y procesamiento de datos. Puede realizar diferentes tipos de análisis de estadística multivariada y espacial, así como manipulación, adquisición y producción de datos SIG, análisis de conectividad ecológica, eocacústica, manejo de bases de datos y escritura científica. Cuenta además experiencia en coordinación de grupos de trabajo, y socialización de proyectos académicos y de consultoría.
+
+## Carolina Paniagua-Villada
+Ingeniera ambiental de la Universidad Nacional. Estudiante de Maestría en Biología de la Universidad de Antioquia, su trabajo de investigación está enfocado en complementar el análisis del paisaje físico con técnicas del paisaje sonoro. Tiene experiencia en manejo de datos SIG y modelos de conectividad ecológica. Actualmente, trabaja para la secretaría de Medio Ambiente y Desarrollo Sostenible del municipio de La Estrella, en el área de planteamiento de proyectos para la conservación de la biodiversidad en el municipio.
 
 ## Contenido del Curso
 
