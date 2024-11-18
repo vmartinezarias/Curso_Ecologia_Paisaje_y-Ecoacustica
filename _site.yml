@@ -1,13 +1,32 @@
-name: "Curso Ecología del Paisaje y Ecoacústica"
+name: "Curso_Ecologia_Paisaje"
 navbar:
-  title: "Curso Ecología del paisaje y ecoacústica"
+  title: "Curso de Ecología y Ecoacústica"
   left:
-    - text: "Home"
+    - text: "Inicio"
       href: index.html
-    - text: "About"
+    - text: "Acerca de"
       href: about.html
-
-
-git remote add origin https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica.git
-git branch -M main
-git push -u origin main
+    - text: "Material del Curso"
+      menu:
+        - text: "1. Crear Carpeta y Descargar Datos"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/1-Crear_carpeta_y_descargar_datos_iniciales.ipynb
+        - text: "2. Obtener Datos de Paisaje"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/2-Obtener_datos_de_paisaje.ipynb
+        - text: "3. Cálculo de Índices Satelitales"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/3-Calculo_Indices_satelitales.ipynb
+        - text: "4. Fragmentación y Métricas del Paisaje"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/4-Fragmentacion_metricas_paisaje.ipynb
+        - text: "5. Conectividad Funcional"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/5-Conectividad_funcional.ipynb
+        - text: "6. Autocorrelación Espacial"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/6-Autocorrelacion_Espacial.ipynb
+        - text: "7. Cambio de Nombre de Archivos"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/7-Cambio_nombre_archivos.ipynb
+        - text: "8. Biofonías y Diversidad"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/8-Biofonias_Analisis_de_diversidad.ipynb
+        - text: "9. Geofonías"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/9-Geofonias.ipynb
+        - text: "10. Antropofonías"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/10-Antropofonias.ipynb
+        - text: "11. Índices Acústicos"
+          href: https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/11-Indices_Acusticos.ipynb

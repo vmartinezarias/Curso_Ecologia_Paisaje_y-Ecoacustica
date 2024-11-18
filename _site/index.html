@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Curso de Ecología y Ecoacústica</title>
+
+<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Curso de Ecología y Ecoacústica</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Inicio</a>
+</li>
+<li>
+  <a href="about.html">Acerca de</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Material del Curso
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/1-Crear_carpeta_y_descargar_datos_iniciales.ipynb">1. Crear Carpeta y Descargar Datos</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/2-Obtener_datos_de_paisaje.ipynb">2. Obtener Datos de Paisaje</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/3-Calculo_Indices_satelitales.ipynb">3. Cálculo de Índices Satelitales</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/4-Fragmentacion_metricas_paisaje.ipynb">4. Fragmentación y Métricas del Paisaje</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/5-Conectividad_funcional.ipynb">5. Conectividad Funcional</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/6-Autocorrelacion_Espacial.ipynb">6. Autocorrelación Espacial</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/7-Cambio_nombre_archivos.ipynb">7. Cambio de Nombre de Archivos</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/8-Biofonias_Analisis_de_diversidad.ipynb">8. Biofonías y Diversidad</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/9-Geofonias.ipynb">9. Geofonías</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/10-Antropofonias.ipynb">10. Antropofonías</a>
+    </li>
+    <li>
+      <a href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/11-Indices_Acusticos.ipynb">11. Índices Acústicos</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Curso de Ecología y Ecoacústica</h1>
+
+</div>
+
+
+<div id="bienvenidos-al-curso-de-ecología-y-ecoacústica"
+class="section level1">
+<h1>Bienvenidos al Curso de Ecología y Ecoacústica</h1>
+<p>Este curso está diseñado para enseñar conceptos clave de la ecología
+del paisaje y la ecoacústica, utilizando herramientas computacionales
+modernas como <strong>Google Colab</strong> y <strong>R
+Markdown</strong>.</p>
+<div id="contenido-del-curso" class="section level2">
+<h2>Contenido del Curso</h2>
+<p>El curso cubre los siguientes temas:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Introducción</strong>: Crear carpetas y descargar datos
+iniciales.</li>
+<li><strong>Obtener Datos de Paisaje</strong>: Técnicas de análisis de
+datos espaciales.</li>
+<li><strong>Índices Satelitales</strong>: Cálculo de métricas a partir
+de imágenes satelitales.</li>
+<li><strong>Fragmentación y Métricas del Paisaje</strong>: Cómo medir la
+fragmentación y conectividad.</li>
+<li><strong>Conectividad Funcional</strong>: Métodos para evaluar la
+conectividad ecológica.</li>
+<li><strong>Autocorrelación Espacial</strong>: Métodos estadísticos
+espaciales.</li>
+<li><strong>Cambio de Nombre de Archivos</strong>: Organización
+eficiente de datos.</li>
+<li><strong>Biofonías y Diversidad Acústica</strong>: Análisis de
+diversidad acústica.</li>
+<li><strong>Geofonías y Antropofonías</strong>: Exploración de los
+paisajes sonoros.</li>
+<li><strong>Índices Acústicos</strong>: Métricas de análisis
+acústico.</li>
+</ol>
+</div>
+<div id="cómo-acceder-al-material" class="section level2">
+<h2>Cómo Acceder al Material</h2>
+<p>Puedes acceder a los notebooks y material del curso desde las
+siguientes secciones:</p>
+<ul>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/1-Crear_carpeta_y_descargar_datos_iniciales.ipynb">Notebook
+1 - Crear Carpeta y Datos Iniciales</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/2-Obtener_datos_de_paisaje.ipynb">Notebook
+2 - Obtener Datos de Paisaje</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/3-Calculo_Indices_satelitales.ipynb">Notebook
+3 - Cálculo de Índices Satelitales</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/4-Fragmentacion_metricas_paisaje.ipynb">Notebook
+4 - Fragmentación y Métricas</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/5-Conectividad_funcional.ipynb">Notebook
+5 - Conectividad Funcional</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/6-Autocorrelacion_Espacial.ipynb">Notebook
+6 - Autocorrelación Espacial</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/7-Cambio_nombre_archivos.ipynb">Notebook
+7 - Cambio de Nombre de Archivos</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/8-Biofonias_Analisis_de_diversidad.ipynb">Notebook
+8 - Biofonías y Diversidad</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/9-Geofonias.ipynb">Notebook
+9 - Geofonías</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/10-Antropofonias.ipynb">Notebook
+10 - Antropofonías</a></li>
+<li><a
+href="https://colab.research.google.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/11-Indices_Acusticos.ipynb">Notebook
+11 - Índices Acústicos</a></li>
+</ul>
+</div>
+<div id="información-adicional" class="section level2">
+<h2>Información Adicional</h2>
+<p>Este curso está continuamente actualizado, así que asegúrate de
+seguir revisando esta página para nuevos recursos.</p>
+</div>
+<div id="contacto" class="section level2">
+<h2>Contacto</h2>
+<p>Si tienes dudas o preguntas, por favor contáctame por <a
+href="https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/issues">GitHub
+Issues</a>.</p>
+<hr />
+<div id="cómo-configurar-el-curso-localmente" class="section level3">
+<h3>Cómo Configurar el Curso Localmente</h3>
+<p>Si deseas clonar este curso y ejecutarlo localmente: 1. Clona este
+repositorio usando Git: ```bash git clone <a
+href="https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica.git"
+class="uri">https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica.git</a></p>
+</div>
+<div id="configuración-gee" class="section level3">
+<h3>CONFIGURACIÓN GEE:</h3>
+<p>A continuación se muestra el proceso visual de registro en Google
+Earth Engine (<a href="https://earthengine.google.com/"
+class="uri">https://earthengine.google.com/</a>)</p>
+<hr />
+<p>Paso 1</p>
+<div class="float">
+<img src="images/01-01.jpeg" alt="Paso 1" />
+<div class="figcaption">Paso 1</div>
+</div>
+<p>Paso 2</p>
+<div class="float">
+<img src="images/02-01.jpeg" alt="Paso 2" />
+<div class="figcaption">Paso 2</div>
+</div>
+<p>Paso 3</p>
+<div class="float">
+<img src="images/03-01.jpeg" alt="Paso 4" />
+<div class="figcaption">Paso 4</div>
+</div>
+<div class="float">
+<img src="images/04.jpeg" alt="Paso 4" />
+<div class="figcaption">Paso 4</div>
+</div>
+<p>Paso 5</p>
+<div class="float">
+<img src="images/05.jpeg" alt="Paso 5" />
+<div class="figcaption">Paso 5</div>
+</div>
+<div class="float">
+<img src="images/06.jpeg" alt="Paso 6" />
+<div class="figcaption">Paso 6</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
