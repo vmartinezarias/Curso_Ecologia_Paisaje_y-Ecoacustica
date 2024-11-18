@@ -11,6 +11,8 @@ Los audios pueden ser descargados de: https://drive.google.com/drive/folders/1UJ
 
 Introducción a Google COLAB: https://www.youtube.com/watch?v=8VFYs3Ot_aA
 
+Etiquetas: https://www.dropbox.com/scl/fi/a8wt7neu5pyqi3g3lyen3/FORMATO_ETIQUETAS.xlsx?rlkey=4h3gkzglqvxd2gpj2w66aijr6&st=s4fanim4&dl=0
+
 
 # INSTRUCTORES
 ## Víctor M. Martínez-Arias
