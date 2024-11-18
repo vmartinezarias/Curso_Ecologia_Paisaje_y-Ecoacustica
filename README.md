@@ -26,17 +26,17 @@ El curso cubre los siguientes temas:
 
 Puedes acceder a los notebooks y material del curso desde las siguientes secciones:
   
-- [Notebook 1 - Crear Carpeta y Datos Iniciales](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/1-Crear_carpeta_y_descargar_datos_iniciales.ipynb)
-- [Notebook 2 - Obtener Datos de Paisaje](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/2-Obtener_datos_de_paisaje.ipynb)
-- [Notebook 3 - Cálculo de Índices Satelitales](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/3-Calculo_Indices_satelitales.ipynb)
-- [Notebook 4 - Fragmentación y Métricas](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/4-Fragmentacion_metricas_paisaje.ipynb)
-- [Notebook 5 - Conectividad Funcional](https://github.com/github/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/5-Conectividad_funcional.ipynb)
-- [Notebook 6 - Autocorrelación Espacial](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/6-Autocorrelacion_Espacial.ipynb)
-- [Notebook 7 - Cambio de Nombre de Archivos](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/7-Cambio_nombre_archivos.ipynb)
-- [Notebook 8 - Biofonías y Diversidad](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/8-Biofonias_Analisis_de_diversidad.ipynb)
-- [Notebook 9 - Geofonías](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/9-Geofonias.ipynb)
-- [Notebook 10 - Antropofonías](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/10-Antropofonias.ipynb)
-- [Notebook 11 - Índices Acústicos](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y_Ecoacustica/blob/main/11-Indices_Acusticos.ipynb)
+- [Notebook 1 - Crear Carpeta y Datos Iniciales](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/1%20-%20Crear_carpeta_y_descargar_datos_iniciales.ipynb)
+- [Notebook 2 - Obtener Datos de Paisaje](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/2%20-%20Obtener_datos_de_paisaje.ipynb)
+- [Notebook 3 - Cálculo de Índices Satelitales](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/3%20-%20Calculo_Indices_satelitales.ipynb)
+- [Notebook 4 - Fragmentación y Métricas](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/4%20-%20Fragmentacion_metricas_paisaje.ipynb)
+- [Notebook 5 - Conectividad Funcional](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/5%20-%20Conectividad_funcional.ipynb)
+- [Notebook 6 - Autocorrelación Espacial](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/6%20-%20Autocorrelaci%C3%B3n_Espacial.ipynb)
+- [Notebook 7 - Cambio de Nombre de Archivos](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/7%20-%20Cambio_nombre_archivos.ipynb)
+- [Notebook 8 - Biofonías y Diversidad](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/8%20-%20Biofonias_Analisis_de_diversidad.ipynb)
+- [Notebook 9 - Geofonías](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/9%20-%20Geofonias.ipynb)
+- [Notebook 10 - Antropofonías](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/10%20-%20Antropofonias.ipynb)
+- [Notebook 11 - Índices Acústicos](https://github.com/vmartinezarias/Curso_Ecologia_Paisaje_y-Ecoacustica/blob/main/11%20-%20Indices_Acusticos.ipynb)
 
 ## Información Adicional
 
