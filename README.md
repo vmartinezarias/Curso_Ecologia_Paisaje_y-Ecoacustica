@@ -1,23 +1,27 @@
 ---
-title: "Curso de Ecología y Ecoacústica"
+title: "Curso de Ecología del paisaje con Énfasis en Ecoacústica"
 output: html_document
 ---
 
-# Bienvenidos al Curso de Ecología y Ecoacústica
+# Bienvenidos al Curso de Ecología del paisaje con énfasis en Ecoacústica
 
-Este curso está diseñado para enseñar conceptos clave de la ecología del paisaje y la ecoacústica, utilizando herramientas computacionales modernas como **Google Colab** y **R Markdown**.
+Este curso está diseñado para enseñar conceptos clave de la ecología del paisaje y la ecoacústica, utilizando herramientas computacionales modernas como **Google Colab**.
+Los audios pueden ser descargados de: https://drive.google.com/drive/folders/1UJoo2CyV6Ha9UKdP4g4Ei1PjDRyjizgR?usp=sharing
+Introducción a Google COLAB: https://www.youtube.com/watch?v=8VFYs3Ot_aA
+
+
 
 ## Contenido del Curso
 
 El curso cubre los siguientes temas:
 
 1. **Introducción**: Crear carpetas y descargar datos iniciales.
-2. **Obtener Datos de Paisaje**: Técnicas de análisis de datos espaciales.
+2. **Obtener Datos de Paisaje**: Descargar los datos espaciales.
 3. **Índices Satelitales**: Cálculo de métricas a partir de imágenes satelitales.
 4. **Fragmentación y Métricas del Paisaje**: Cómo medir la fragmentación y conectividad.
 5. **Conectividad Funcional**: Métodos para evaluar la conectividad ecológica.
 6. **Autocorrelación Espacial**: Métodos estadísticos espaciales.
-7. **Cambio de Nombre de Archivos**: Organización eficiente de datos.
+7. **Cambio de Nombre de Archivos**: Organización eficiente de datos acústicos.
 8. **Biofonías y Diversidad Acústica**: Análisis de diversidad acústica.
 9. **Geofonías y Antropofonías**: Exploración de los paisajes sonoros.
 10. **Índices Acústicos**: Métricas de análisis acústico.
